@@ -6,7 +6,7 @@
     <title>Soumyadeep Guchhait | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* General Styles */
+       
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +20,7 @@
             background-color: #f5f8fa;
         }
 
-        /* Header */
+       
         header {
             background-color: #0d2538;
             color: #ffffff;
@@ -57,31 +57,7 @@
             color: #82aaff;
         }
 
-        /* Hamburger Icon for Mobile */
-        .hamburger {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #ffffff;
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-        }
-
-        /* Hide nav by default in mobile view */
-        .mobile-nav {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .mobile-nav ul {
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        /* Hero Section */
+       
         .hero-section {
             background-color: #1c3b5a;
             color: #ffffff;
@@ -149,7 +125,7 @@
             padding: 1.5rem;
             border-radius: 0.5rem;
             width: 100%;
-            max-width: 300px;
+            max-width: 500px;
             text-align: left;
         }
 
@@ -163,7 +139,7 @@
             font-size: 1rem;
         }
 
-        /* Contact Section */
+        
         .contact-section p {
             margin: 0.5rem 0;
             font-size: 1rem;
@@ -177,42 +153,36 @@
             margin-top: 1rem;
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            nav ul {
-                display: none;
-            }
-
-            .mobile-nav {
-                display: flex;
-            }
-
-            .hero-text h2 {
-                font-size: 1.5rem;
-            }
-
-            .card-container, .project-grid {
-                flex-direction: column;
-            }
-
-            .btn {
-                font-size: 0.9rem;
-            }
+        
+        .desktop-nav li a{
+font-weight: 600;
         }
+        .card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Moves the card up slightly */
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2); /* Increases the shadow */
+}
+
     </style>
 </head>
 <body>
     
     <header>
         <h1>Soumyadeep Guchhait</h1>
-        <p><b>Roll</b> -88,&nbsp <b>Sec</b> -c</p>
+        <p><b>Roll</b> -88,&nbsp <b>Sec</b> -C</p>
         
-        <nav>
-            <ul class="desktop-nav">
+        <nav style="margin-top: 20px;">
+            <ul class="desktop-nav" >
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#education">Education</a></li>
@@ -221,15 +191,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="mobile-nav" id="mobile-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+           
         </nav>
     </header>
 
@@ -267,10 +229,7 @@
             <div class="card">
                 <h3>Job Title - Stay tuned for updates on this page</h3>
                 <p>Stay tuned for updates on this page</p>
-                <ul>
-                    <li>Briefly describe role and responsibilities.</li>
-                    <li>Highlight notable projects or achievements.</li>
-                </ul>
+                
             </div>
         </div>
     </section>
@@ -278,16 +237,18 @@
     
     <section id="publications" class="section">
         <h2>Publications</h2>
-        <div class="publication-list">
+        <div class="card-container">
+            <div class="card">
             Stay tuned for updates on this page
+        </div>
         </div>
     </section>
 
    
     <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
+        <div class="card-container">
+            <div class="card">
                 <h3>Project Title</h3>
                 <p>Calculator using HTML, JavaScript; Tic-tac-toe game using JavaScript.</p>
             </div>
